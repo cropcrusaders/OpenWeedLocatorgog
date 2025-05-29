@@ -1,0 +1,20 @@
+################################################################################
+Notes on mqtt_ui.py
+
+Summary completed on 29/05/2025
+Summary based on new file in current commit
+################################################################################
+
+Purpose:
+- Provide a simple Tkinter GUI for controlling multiple OWL nodes via MQTT
+- Supports up to 40 nodes with buttons to start/stop detection, shutdown
+  nodes and toggle all relays
+
+Key Classes/Functions:
+- `OwlMQTTGUI`: main GUI window handling broker connection and commands
+- `main`: entry point that launches the GUI
+
+Dependencies:
+- utils.mqtt_manager
+- paho-mqtt
+- tkinter and logging modules

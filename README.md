@@ -110,6 +110,30 @@ options. Detections are published as JSON messages and OWL listens for control
 commands (`start`, `stop`, `shutdown`) to allow a master PC or Raspberry Pi to
 coordinate multiple OWL nodes.
 
+### Multi-Node MQTT User Interface
+
+The `utils/mqtt_ui.py` script now provides a lightweight graphical interface
+built with Tkinter for controlling up to **40** OWL nodes through a single MQTT
+broker. Install the optional `paho-mqtt` dependency and run a broker (for
+example `python -m utils.mqtt_broker`).
+
+Start the UI with:
+
+```bash
+python -m utils.mqtt_ui
+```
+
+Enter the broker host, port and the number of nodes, then press **Connect**.
+Commands are issued via buttons:
+
+- **Start Detection** / **Stop Detection** – control detections on a specific
+  node (selected via the Node ID field)
+- **Shutdown Node** – gracefully shut down a node
+- **All Relays ON** / **All Relays OFF** – toggle all relays across every node
+
+Nodes listen on `owl/<id>/control` for commands and publish detections on
+`owl/<id>/detections`.
+
 # OWL Use Cases
 
 ## Vehicle-mounted spot spraying
