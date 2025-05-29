@@ -1,0 +1,21 @@
+################################################################################
+Notes on mqtt_ui.py
+
+Summary completed on 29/05/2025
+Summary based on commit dc4f573
+################################################################################
+
+Purpose:
+- Provide an interactive CLI for controlling multiple OWL nodes via MQTT
+- Supports up to 40 nodes with broadcast commands to toggle all relays
+
+Key Functions:
+- main: parses arguments, connects to the broker and runs the command loop
+
+Changes:
+- Removed an unused typing import
+
+Dependencies:
+- utils.mqtt_manager
+- paho-mqtt
+- standard library argparse and logging modules
