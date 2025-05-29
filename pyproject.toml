@@ -27,6 +27,7 @@ dependencies = [
 
 [project.scripts]
 owl = "owl:cli"
+mqtt-cli = "utils.mqtt_cli:main"
 
 [tool.setuptools]
 packages = ["display", "utils"]
