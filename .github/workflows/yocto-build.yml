@@ -22,9 +22,9 @@ jobs:
 
       - name: Set up Yocto environment
         run: |
-          git clone --branch kirkstone git://git.yoctoproject.org/poky poky
+          git clone --branch kirkstone https://git.yoctoproject.org/git/poky.git poky
           cd poky
-          git clone --branch kirkstone git://git.openembedded.org/meta-openembedded
+          git clone --branch kirkstone https://git.openembedded.org/meta-openembedded
           git clone --branch kirkstone https://github.com/agherzan/meta-raspberrypi
           source oe-init-build-env build
           echo 'BBLAYERS += "${TOPDIR}/../meta-openembedded/meta-oe"' >> conf/bblayers.conf
