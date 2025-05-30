@@ -2,6 +2,21 @@
 
 This guide outlines the basic steps for creating a custom Yocto image for running OpenWeedLocator (OWL) on Raspberry Pi models. These instructions assume familiarity with Yocto Project concepts and a Linux build host with the required dependencies installed.
 
+## Prerequisites
+
+Make sure the following host tools are installed so that BitBake can run:
+
+```bash
+sudo apt-get install lz4 zstd
+```
+
+These packages provide `lz4c`, `zstd`, `unzstd` and `pzstd`. If they are missing you may see an error like:
+
+```
+ERROR: The following required tools (as specified by HOSTTOOLS) appear to be unavailable in PATH
+```
+
+
 ## 1. Set up the Yocto environment
 
 1. Create a working directory and clone the Yocto Project `poky` repository:
