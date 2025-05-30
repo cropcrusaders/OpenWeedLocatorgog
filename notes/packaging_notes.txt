@@ -9,3 +9,4 @@ OpenWeedLocator packaging
 
 - Added docs/yocto.md with instructions for building an OWL Yocto image for multiple Raspberry Pi models.
 - Added a GitHub Actions workflow to build the OWL Yocto image.
+- Updated Yocto build workflow to install `libegl1` instead of the removed `libegl1-mesa` package.
