@@ -14,3 +14,4 @@ OpenWeedLocator packaging
 - Updated workflow to use actions/upload-artifact@v4 to fix download issue.
 
 - Updated Yocto build workflow to use libegl1 on Ubuntu 24.04.
+- Switched Yocto workflow clones to use HTTPS to avoid network restrictions.
