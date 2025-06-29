@@ -106,6 +106,7 @@ These will be updated as major changes are made. All older versions will be reta
 * [Yocto extras and configuration](docs/yocto-extras.md)
 * [Self-hosted GitHub runner setup](docs/self-hosted-runner.md)
 
+* [MQTT Section Control Guide](docs/mqtt_section_control.md)
 ### MQTT Integration (Experimental)
 
 OWL can broadcast detection events and receive control commands over MQTT.
