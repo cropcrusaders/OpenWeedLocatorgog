@@ -1,0 +1,19 @@
+################################################################################
+Notes on mqtt_section_control.py
+
+Summary completed on 29/05/2025
+Summary based on new file in current commit
+################################################################################
+
+Purpose:
+- Bridge OpenWeedLocator relay control with AgOpenGPS using MQTT
+- Implements command and status topics defined in the Section Control Rule
+
+Key Classes:
+- SectionControlMQTT: subscribes to command topics, updates relays and publishes acknowledgements/heartbeats
+
+Dependencies:
+- utils.mqtt_manager
+- utils.output_manager
+- paho-mqtt
+- standard library argparse, json, threading and logging modules
